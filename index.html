@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Weather Dashboard</title>
+</head>
+<body>
+  <h1 id="title">Weather Dashboard</h1>
+  <main>
+    <div class="container">
+      <div id="search-container">
+        <h2 id="search-title">Search for a city:</h2>
+        <input type="text" id="city-input" class="inputValue" placeholder="Search City">
+        <input id="input-btn" type="submit" value="Submit">
+      </div>
+      <nav class="big-city-btn">
+        <button id="austin" class="city-btn">Austin</button>
+        <button id="chicago" class="city-btn">Chicago</button>
+        <button id="new+york" class="city-btn">New York</button>
+        <button id="orlando" class="city-btn">Orlando</button>
+        <button id="san+francisco" class="city-btn">San Francisco</button>
+        <button id="seattle" class="city-btn">Seattle</button>
+        <button id="denver" class="city-btn">Denver</button>
+        <button id="atlanta" class="city-btn">Atlanta</button>
+      </nav>
+    </div>
+    <div class="display">
+      <h2 class="name">
+        <span id="city-name"></span><span id="date"></span><span id="icon"></span>
+      </h2>
+      <div id="selected-city">
+        <p class="desc"></p> 
+        <p class="temp"></p> 
+        <p class="wind"></p>
+        <p class="humid"></p>
+        <p class="index"></p>
+        <p class="location"></p>
+      </div>
+      <h3 id="forecast">5-Day Forecast:</h3>
+      <div class="forecast-container">
+        <div class="class">
+          <p class="text1" >This is a paragraph</p>
+          <button>Add two functions</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>

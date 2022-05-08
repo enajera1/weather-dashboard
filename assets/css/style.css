@@ -1,0 +1,39 @@
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border: 1px solid black;
+  height: 100%;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, blue, navy);
+  color: white;
+}
+
+main {
+  display: flex;
+}
+
+.container {
+  border: 1px solid black;
+  width: 30%;
+}
+
+.big-city-btn {
+  padding: .3vh;
+}
+.city-btn {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center ;
+}
+
+.container {
+  padding: .5vh;
+}
+.search-container {
+  border-bottom: 1px solid black;
+
+}
