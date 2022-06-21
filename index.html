@@ -12,7 +12,7 @@
   <main>
     <div class="container">
       <div id="search-container">
-        <h2 id="search-title">Search for a city:</h2>
+        <h2 id="search-title">Enter a city:</h2>
         <input type="text" id="city-input" class="inputValue" placeholder="Search City">
         <input id="input-btn" type="submit" value="Submit">
       </div>
@@ -29,7 +29,7 @@
     </div>
     <div class="display">
       <h2 class="name">
-        <span id="city-name"></span><span id="date"></span><span id="icon"></span>
+        <span id="city-name"></span><span id="city-current-date"></span><span id="city-current-icon"></span>
       </h2>
       <div id="selected-city">
         <p class="desc"></p> 
@@ -42,13 +42,55 @@
       <h3 id="forecast">5-Day Forecast:</h3>
       <div class="forecast-container">
         <div class="class">
-          <p class="text1" >This is a paragraph</p>
+          <p class="text1"></p>
           <button>Add two functions</button>
         </div>
       </div>
     </div>
-  </main>
+    <!-- 5-Day Forecast -->
+    <div class="row">
+      <h3 class="forecast-header">5-Day Forecast:</h3>
+  </div>
 
+  <div class="row" id="forecast-cards">
+      <div class="card col-2 text-white" id="day-1">
+          <p class="card-1" id="date-0">Date</p>
+          <img id="city-icon-1"></img>
+          <p class="card-1" id="temp-0">Temp:</p>
+          <p class="card-1" id="humidity-0">Humidity:</p>
+      </div>
+
+      <div class="card col-2 text-white" id="day-2">
+          <p class="card-2" id="date-1">Date</p>
+          <img id="city-icon-2"></img>
+          <p class="card-2" id="temp-1">Temp:</p>
+          <p class="card-2" id="humidity-1">Humidity:</p>
+      </div>
+
+      <div class="card col-2 text-white" id="day-3">
+          <p class="card-3" id="date-2">Date</p>
+          <img id="city-icon-3"></img>
+          <p class="card-3" id="temp-2">Temp:</p>
+          <p class="card=3" id="humidity-2">Humidity:</p>
+      </div>
+
+      <div class="card col-2 text-white" id="day-4">
+          <p class="card-4" id="date-3">Date</p>
+          <img id="city-icon-4"></img>
+          <p class="card-4" id="temp-3">Temp:</p>
+          <p class="card-4" id="humidity-3">Humidity:</p>
+      </div>
+
+      <div class="card col-2 text-white" id="day-5">
+          <p class="card-5" id="date-4">Date</p>
+          <img id="city-icon-5"></img>
+          <p class="card-5" id="temp-4">Temp:</p>
+          <p class="card-5" id="humidity-4">Humidity:</p>
+      </div>
+
+  </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
